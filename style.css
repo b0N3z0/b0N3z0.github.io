@@ -2,21 +2,30 @@
  margin: auto;
 }
 body{
-  display:flex;
+  display: flex;
   flex-direction: column;
- justify-content:space-between;
 
 }
-header{
-margin-bottom: 50px;
+nav {
+  margin: 0;
 }
-section{
-  margin: 15px 0px;
+header{
+  margin-top: 25px;
+  margin-bottom: 50px;
 }
 main {
   max-width: 823px;
   display: flex;
   flex-direction: column;
+}
+section{
+  margin: 15px 0px;
+}
+h1, h2{
+  margin: 15px;
+}
+p {
+  font-size: 20px;
 }
 .album-packs{
   display: flex;
