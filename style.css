@@ -1,11 +1,25 @@
 *{
+ margin: auto;
+}
+body{
+  display:flex;
+  flex-direction: column;
+ justify-content:space-between;
 
+}
+header{
+margin-bottom: 50px;
+}
+section{
+  margin: 15px 0px;
 }
 main {
   max-width: 823px;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
-
-.grandQ {
-  margin: auto;
+.album-packs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
