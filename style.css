@@ -99,6 +99,8 @@ body {
   border-radius: 4px;
   background-color: #712073;
   color: #ffffff;
+  border-radius: 30px;
+  font-weight: 600;
 }
 .page-footer {
   padding: 40px 0;
