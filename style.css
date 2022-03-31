@@ -1,49 +1,53 @@
 body {
   margin: auto;
   max-width: 960px;
-  /*font-family: "Montserrat", "Helvetica", "Arial", sans-serif; */
-  font-family: 'Mulish', sans-serif;
-  font-size: 16px;
+  /* font-family: 'Mulish', sans-serif; */
+  font-family: 'Source Serif Pro', serif;
+  font-size: 22px;
+
   line-height: 32px;
-  color: #f2f2f2;
+  color: black;
   background-color: #080208;
-  background-image: url("img/hero-bg.jpg");
+  /*background-image: */
   background-repeat: no-repeat;
   background-position: top center;
 }
+body:before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url("img/hero-bg.jpg");
+  transform:rotateY(180deg);
+  background-size: cover;
+}
 .container {
   max-width: 928px;
-  margin: 0 auto;
-  padding: 0 16px;
+
 }
 .page-header {
-  margin: 0 0 180px;
-  padding: 32px 0 32px;
+  margin: 0 0 80px;
+  padding: 32px 0;
 }
 .page-header .container,
 .page-footer .container {
-  /* Перестанет работать - раскомментировать
-   max-width: 1408px; */
+  /* Перестанет работать - раскомментировать*/
+   /* max-width: 1408px; */;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   /*text-align ; */
 }
 .page-header a {
-  margin-left: 56px;
+
   color: #fea18d;
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: left;
-}
-
-.header-email {
-  padding-left: 30px;
-  background-image: url("img/icon-email.svg");
-}
-.header-phone {
-  padding-left: 25px;
-  background-image: url("img/icon-phone.svg");
 }
 .hero-image {
   margin-bottom: 400px;
@@ -54,7 +58,8 @@ body {
 }
 .hero-image p {
   margin: 0;
-  font-size: 32px;
+  font-size: 24px;
+  font-weight: 400;
   line-height: 48px;
 }
 .heading {
@@ -71,12 +76,8 @@ body {
   line-height: 80px;
   text-align: center;
 }
-.user-image {
-  margin: 0 0 32px;
-  text-align: center;
-}
-.intro h3,
-.portfolio h3 {
+
+.intro h3{
   margin: 0 0 12px;
   font-size: 28px;
   line-height: 40px;
@@ -84,10 +85,6 @@ body {
 }
 .intro p {
   margin: 0 0 32px;
-}
-
-.portfolio {
-  margin: 0 0 120px;
 }
 .button {
   margin-top: 160px;
@@ -109,15 +106,4 @@ body {
   margin-left: 56px;
   color: #fea18d;
   text-decoration: none;
-  background-repeat: no-repeat;
-  background-position: left;
-}
-.footer-email {
-  padding-left: 30px;
-  background-image: url("img/icon-email.svg");
-}
-
-.footer-phone {
-  padding-left: 25px;
-  background-image: url("img/icon-phone.svg");
 }
