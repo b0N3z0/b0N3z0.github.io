@@ -3,11 +3,11 @@ body {
   max-width: 960px;
   /* font-family: 'Mulish', sans-serif; */
   font-family: 'Source Serif Pro', serif;
-  font-size: 22px;
+  font-size: 18px;
 
-  line-height: 32px;
+  line-height: 24px;
   color: black;
-  background-color: #080208;
+  background-color: #f3f4f6;
   /*background-image: */
   background-repeat: no-repeat;
   background-position: top center;
@@ -21,13 +21,23 @@ body:before {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: url("img/hero-bg.jpg");
+  background: url("img/bg.jpg");
   transform:rotateY(180deg);
-  background-size: cover;
+  background-size: auto;
 }
 .container {
   max-width: 928px;
-
+}
+.core{
+  background: rgba(255, 255, 255, .75);
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px 3px rgba(122,122,122,0.5);
+  padding: 20px;
+}
+.head, .gallery{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .page-header {
   margin: 0 0 80px;
@@ -39,33 +49,49 @@ body:before {
    /* max-width: 1408px; */;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   /*text-align ; */
 }
 .page-header a {
-
-  color: #fea18d;
+  font-size: 18px;
+  text-transform:uppercase;
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: left;
+  color: #CC6F54;
 }
-.hero-image {
-  margin-bottom: 400px;
+nav{
+  margin-top: 35px;
+  display:flex;
+  justify-content: space-around;
 }
-.hero-image .container {
+main {
+  margin-bottom: 50px;
+}
+main .container {
   max-width: 1408px;
   text-align: center;
 }
-.hero-image p {
-  margin: 0;
+.big p {
+  margin: 30px 0px;
   font-size: 24px;
   font-weight: 400;
   line-height: 48px;
+}
+main  p {
+  margin: 30px 0px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
 }
 .heading {
   margin: 0 0 24px;
   font-size: 80px;
   line-height: 96px;
+}
+h1{
+  text-align: center;
+
 }
 .intro {
   margin: 0 0 120px;
@@ -86,7 +112,7 @@ body:before {
 .intro p {
   margin: 0 0 32px;
 }
-.button {
+/* .button {
   margin-top: 160px;
   padding: 6px 20px;
   display: inline-block;
@@ -95,10 +121,10 @@ body:before {
   text-transform: uppercase;
   border-radius: 4px;
   background-color: #712073;
-  color: #ffffff;
+
   border-radius: 30px;
   font-weight: 600;
-}
+} */
 .page-footer {
   padding: 40px 0;
 }
