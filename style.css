@@ -27,12 +27,17 @@ body:before {
 }
 .container {
   max-width: 928px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
 }
 .core{
   background: rgba(255, 255, 255, .75);
   border-radius: 10px;
   box-shadow: inset 0 0 5px 3px rgba(122,122,122,0.5);
   padding: 20px;
+  margin-top: 50px;
 }
 .head, .gallery{
   display: flex;
