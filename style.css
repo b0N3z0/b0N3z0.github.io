@@ -1,16 +1,17 @@
 body {
   margin: auto;
-  max-width: 960px;
+ max-width: 960px;
   /* font-family: 'Mulish', sans-serif; */
   font-family: 'Source Serif Pro', serif;
   font-size: 18px;
-
   line-height: 24px;
   color: black;
   background-color: #f3f4f6;
   /*background-image: */
   background-repeat: no-repeat;
   background-position: top center;
+  display: flex;
+  flex-direction: column;
 }
 body:before {
   content: ' ';
@@ -39,14 +40,20 @@ body:before {
   padding: 20px;
   margin-top: 50px;
 }
-.head, .gallery, .big{
+.gallery, .big{
   display: flex;
   flex-direction: row;
-  
+}
+.head{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
 }
 .page-header {
   margin: 0 0 80px;
   padding: 32px 0;
+  max-width: 960px;
+  text-align: center;
 }
 .page-header .container,
 .page-footer .container {
